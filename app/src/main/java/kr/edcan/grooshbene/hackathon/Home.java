@@ -29,8 +29,6 @@ public class Home extends Activity {
     int cnt;
     SharedPreferences pref1;
     SharedPreferences pref2;
-    SharedPreferences.Editor edit1;
-    SharedPreferences.Editor edit2;
     ArrayList<CData> dataArr;
     DataAdapter mAdapter;
     FloatingActionButton btn_add;
@@ -43,8 +41,6 @@ public class Home extends Activity {
         listv = (ListView)findViewById(R.id.listv);
         pref1 = getSharedPreferences("lists",0);
         pref2 = getSharedPreferences("count",0);
-        edit1 = pref1.edit();
-        edit2 = pref2.edit();
         btn_add = (FloatingActionButton)findViewById(R.id.btn_add);
         btn_add.setColorNormalResId(R.color.white);
         btn_add.setColorPressedResId(R.color.white_pressed);
@@ -54,9 +50,7 @@ public class Home extends Activity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(Home.this, PlusDialog.class);
-                cnt++;
                 startActivity(intent);
-                edit2.commit();
 
             }
         });
@@ -82,12 +76,11 @@ public class Home extends Activity {
         mAdapter = new DataAdapter(Home.this, dataArr);
         listv.setAdapter(mAdapter);
         cnt = pref2.getInt("count",0);
-        for(int i=0;i<=cnt;i++) {
+        for(int i=0; i<cnt; i++) {
             String name = pref1.getString("name" + cnt, String.format("\0"));
             String fmil = pref1.getString("family" + cnt, String.format("\0"));
             String number = pref1.getString("number" + cnt, String.format("\0"));
-            if(name.equals("\0")&&fmil.equals("\0")&&number.equals("\0"))
-                continue;
+            if(name.equals("\0") && fmil.equals("\0") && number.equals("\0")) continue;
             dataArr.add(new CData(getApplicationContext(), name, fmil, number));
         }
     }
