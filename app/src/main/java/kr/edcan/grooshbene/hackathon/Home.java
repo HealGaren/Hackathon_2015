@@ -76,6 +76,8 @@ public class Home extends Activity {
 //                }
 //            }
 //        });
+        //https://developers.kakao.com/docs/android 카카오톡 api
+        //http://blog.saltfactory.net/mobile/using-kakaolink-api.html 카카오톡 api 설정 및 메시지 전송법
         dataArr = new ArrayList<CData>();
         mAdapter = new DataAdapter(Home.this, dataArr);
         listv.setAdapter(mAdapter);
