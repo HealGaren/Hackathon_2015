@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.0.51/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="ea9ca0f8b28686e7b47eef107025296bce8e3211">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-d189e2bdb863280130924511096c58fa300c9cea.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-6b57d3f681adfa3a275b8052821866380be29a39.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c29f40ecc48b4981394ecadae870c8d816f49884.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-8c0915679ae6c24d37389ca373074d2ff0ad9dcf.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-b350c9d3d677ffa03cf4b1f0e399164b4674b625.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.51/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="435765097f533f8fdbab200248489123b5b4f78f">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-a5ecf7548646decc7592212f8899b67b9741a0ac.jar" />
+    </item>
+
+</items>
