@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.edcan.grooshbene.hackathon.Splash"
+    android:background="#8bc34a"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10"
+    android:id="@+id/splash">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+</LinearLayout>
