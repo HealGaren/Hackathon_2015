@@ -7,38 +7,47 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.kakao.KakaoLink;
 import com.kakao.KakaoParameterException;
 import com.kakao.KakaoTalkLinkMessageBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Home extends ActionBarActivity {
     public KakaoLink kakaoLink;
     public KakaoTalkLinkMessageBuilder kakaoTalkLinkMessageBuilder;
-    Button btn;
+    ListView listv;
+    ArrayList<CData> dataArr;
+    DataAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        btn = (Button)findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    kakaoLink = KakaoLink.getKakaoLink(getApplicationContext());
-                    kakaoTalkLinkMessageBuilder = kakaoLink.createKakaoTalkLinkMessageBuilder();
-                    kakaoTalkLinkMessageBuilder.addText("박지수님이 당신을 지목하였습니다.");
-                    kakaoTalkLinkMessageBuilder.addImage("https://lh3.googleusercontent.com/-iSOlEUxX5E8/VazgGlcSToI/AAAAAAAAAFU/rygHzNrUVXY/w346-h221/main.png", 300, 200);
-                    kakaoTalkLinkMessageBuilder.addAppLink("앱으로 연결합니다");
-                    kakaoLink.sendMessage(kakaoTalkLinkMessageBuilder.build(), Home.this);
-                    kakaoTalkLinkMessageBuilder = kakaoLink.createKakaoTalkLinkMessageBuilder();
-                } catch (KakaoParameterException e) {
-                    Log.e("error", e.getMessage());
-                }
-            }
-        });
+        listv = (ListView)findViewById(R.id.listv);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                try {
+//                    kakaoLink = KakaoLink.getKakaoLink(getApplicationContext());
+//                    kakaoTalkLinkMessageBuilder = kakaoLink.createKakaoTalkLinkMessageBuilder();
+//                    kakaoTalkLinkMessageBuilder.addText("박지수님이 당신을 지목하였습니다.");
+//                    kakaoTalkLinkMessageBuilder.addImage("https://lh3.googleusercontent.com/-iSOlEUxX5E8/VazgGlcSToI/AAAAAAAAAFU/rygHzNrUVXY/w346-h221/main.png", 300, 200);
+//                    kakaoTalkLinkMessageBuilder.addAppLink("앱으로 연결합니다");
+//                    kakaoLink.sendMessage(kakaoTalkLinkMessageBuilder.build(), Home.this);
+//                    kakaoTalkLinkMessageBuilder = kakaoLink.createKakaoTalkLinkMessageBuilder();
+//                } catch (KakaoParameterException e) {
+//                    Log.e("error", e.getMessage());
+//                }
+//            }
+//        });
+        dataArr = new ArrayList<CData>();
+        mAdapter = new DataAdapter(Home.this, dataArr);
+        listv.setAdapter(mAdapter);
     }
 
 

@@ -6,9 +6,48 @@
     android:background="#ffffff"
     android:orientation="vertical"
     android:weightSum="10">
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="3.5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:background="#8bc34a"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:gravity="right|bottom">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_weight="7"
+            android:src="@drawable/family"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="left|bottom"
+            android:padding="30px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="준비된 가족들"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="6.5">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listv"></ListView>
+    </FrameLayout>
 
 </LinearLayout>
