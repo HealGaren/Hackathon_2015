@@ -1,5 +1,8 @@
 package kr.edcan.grooshbene.hackathon;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,7 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.kakao.KakaoLink;
 import com.kakao.KakaoParameterException;
 import com.kakao.KakaoTalkLinkMessageBuilder;
@@ -17,18 +22,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Home extends ActionBarActivity {
+public class Home extends Activity {
     public KakaoLink kakaoLink;
     public KakaoTalkLinkMessageBuilder kakaoTalkLinkMessageBuilder;
     ListView listv;
+    int cnt;
+    SharedPreferences pref1;
+    SharedPreferences pref2;
+    SharedPreferences.Editor edit1;
+    SharedPreferences.Editor edit2;
     ArrayList<CData> dataArr;
     DataAdapter mAdapter;
+    FloatingActionButton btn_add;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         listv = (ListView)findViewById(R.id.listv);
+        pref1 = getSharedPreferences("lists",0);
+        pref2 = getSharedPreferences("count",0);
+        edit1 = pref1.edit();
+        edit2 = pref2.edit();
+        btn_add = (FloatingActionButton)findViewById(R.id.btn_add);
+        btn_add.setColorNormalResId(R.color.white);
+        btn_add.setColorPressedResId(R.color.white_pressed);
+        btn_add.setIcon(R.drawable.heh);
+        cnt = pref2.getInt("count",0);
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(Home.this, PlusDialog.class);
+                cnt++;
+                startActivity(intent);
+                edit2.commit();
+
+            }
+        });
 //        btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -48,9 +79,16 @@ public class Home extends ActionBarActivity {
         dataArr = new ArrayList<CData>();
         mAdapter = new DataAdapter(Home.this, dataArr);
         listv.setAdapter(mAdapter);
+        cnt = pref2.getInt("count",0);
+        for(int i=0;i<=cnt;i++) {
+            String name = pref1.getString("name" + cnt, String.format("\0"));
+            String fmil = pref1.getString("family" + cnt, String.format("\0"));
+            String number = pref1.getString("number" + cnt, String.format("\0"));
+            if(name.equals("\0")&&fmil.equals("\0")&&number.equals("\0"))
+                continue;
+            dataArr.add(new CData(getApplicationContext(), name, fmil, number));
+        }
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

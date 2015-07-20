@@ -21,6 +21,8 @@
         <activity
             android:name=".Home"
             android:label="@string/title_activity_splash"></activity>
+        <activity android:name=".PlusDialog"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"

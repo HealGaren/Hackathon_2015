@@ -34,11 +34,16 @@ public class DataAdapter extends ArrayAdapter<CData> {
         super(context, 0, object);
         mInflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//        Typeface tf = Typeface.createFromAsset(context.getAssets(), "NotoSansCJKkr-Regular.otf");
+//        name.setTypeface(tf);
+//        family.setTypeface(tf);
+//        phone.setTypeface(tf);
     }
 
     // 보여지는 스타일을 자신이 만든 xml로 보이기 위한 구문
     @Override
     public View getView(int position, View v, ViewGroup parent) {
+
         View view = null;
         // 현재 리스트의 하나의 항목에 보일 컨트롤 얻기
         if (v == null) {

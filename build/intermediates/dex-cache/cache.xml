@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.0.51/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c29f40ecc48b4981394ecadae870c8d816f49884.jar" />
+        sha1="ea9ca0f8b28686e7b47eef107025296bce8e3211">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-b9bb30744fdaaa1ee6507f53a710900dd05a4be5.jar" />
     </item>
     <item
         jar="/home/grooshbene/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
@@ -16,53 +16,11 @@
         <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-b350c9d3d677ffa03cf4b1f0e399164b4674b625.jar" />
     </item>
     <item
-        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.51/jars/classes.jar"
+        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
-        sha1="435765097f533f8fdbab200248489123b5b4f78f">
-        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-d5a47d18bf755448c033885097366ad58a87441c.jar" />
-    </item>
-    <item
-        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.0.51/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="ea9ca0f8b28686e7b47eef107025296bce8e3211">
-        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-d189e2bdb863280130924511096c58fa300c9cea.jar" />
-    </item>
-    <item
-        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.0.51/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="ea9ca0f8b28686e7b47eef107025296bce8e3211">
-        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-b9bb30744fdaaa1ee6507f53a710900dd05a4be5.jar" />
-    </item>
-    <item
-        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-6b57d3f681adfa3a275b8052821866380be29a39.jar" />
-    </item>
-    <item
-        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-8c0915679ae6c24d37389ca373074d2ff0ad9dcf.jar" />
-    </item>
-    <item
-        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-ee669dbc59ad1eda37c51ad3ef686c1c1ab3c328.jar" />
-    </item>
-    <item
-        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0 rc2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-349c5f0842bbdfb26247795bc4a414f2f783bb7c.jar" />
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b3d224b8a2a2688be829fd06eae35806794a1e3e.jar" />
     </item>
     <item
         jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.51/jars/classes.jar"
@@ -72,11 +30,67 @@
         <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-a5ecf7548646decc7592212f8899b67b9741a0ac.jar" />
     </item>
     <item
-        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.51/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="435765097f533f8fdbab200248489123b5b4f78f">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-d5a47d18bf755448c033885097366ad58a87441c.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-ee669dbc59ad1eda37c51ad3ef686c1c1ab3c328.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-8c0915679ae6c24d37389ca373074d2ff0ad9dcf.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-6b57d3f681adfa3a275b8052821866380be29a39.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-349c5f0842bbdfb26247795bc4a414f2f783bb7c.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-5f4af54e051cc1e9ed4b32c800a62a8594182c39.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.0.51/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="ea9ca0f8b28686e7b47eef107025296bce8e3211">
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/classes-d189e2bdb863280130924511096c58fa300c9cea.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/jars/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="23.0.0 rc2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b3d224b8a2a2688be829fd06eae35806794a1e3e.jar" />
+        <dex dex="/home/grooshbene/Hackathon/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c29f40ecc48b4981394ecadae870c8d816f49884.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/Hackathon_2015/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="078cad8ebaa25b1eb1790bd622b3a8ae27c9cc7a">
+        <dex dex="/home/grooshbene/Hackathon_2015/app/build/intermediates/pre-dexed/debug/classes-558f90279c25e6fb21a381a4bec3a188bccd3a1c.jar" />
     </item>
 
 </items>
