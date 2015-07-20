@@ -48,7 +48,7 @@ public class PlusDialog extends Activity {
         pref2 = getSharedPreferences("count", 0);
         edit1 = pref1.edit();
         edit2 = pref2.edit();
-        cnt = pref2.getInt("count", 0);
+        cnt = pref2.getInt("count", 0)+1;
 
         tv_title = (TextView)findViewById(R.id.tv_title);
         ty = Typeface.createFromAsset(this.getAssets(),"NotoSansCJKkr-Regular.otf");
@@ -59,7 +59,9 @@ public class PlusDialog extends Activity {
                 edit1.putString("name"+cnt,text_name);
                 edit1.putString("family"+cnt, text_fmil);
                 edit1.putString("number"+cnt,text_number);
-                edit1.commit();
+                edit1.apply();
+                edit2.putInt("count", cnt);
+                edit2.apply();
                 finish();
             }
         });
